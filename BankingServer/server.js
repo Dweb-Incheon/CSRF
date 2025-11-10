@@ -60,7 +60,7 @@ app.get("/", (req, res) => res.send(`<p>Bank demo. Go to <a href="/login">/login
 // HTTPS server: cert.pem, key.pem
 const options = {
   key: fs.readFileSync("./server.pem"),
-  cert: fs.readFileSync("./server.pem"),
+  cert: fs.readFileSync("./server.cert"),
 };
 
 https.createServer(options, app).listen(PORT, () => {
